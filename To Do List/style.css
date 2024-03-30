@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1525319487362-6edd0c47aa82?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  width: 100vh;
+  height: 20vh;
+  margin-top: -21vw;
+  position: absolute;
+}
+
+#nav img{
+  width: 20vw;
+  height: auto;
+  margin: -5vw;
+  margin-left: -55vw;
+}
+
+#nav-part2{
+  display: flex;
+  gap: 2vw;
+  margin-right: -10vw;
+}
+
+#nav-part2 a{
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+#nav-part2 h4{
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 350;
+  letter-spacing: -0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#nav-part2 h4::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50px;
+  transition: all ease 0.3s;
+}
+
+#nav-part2 h4:hover::after{
+  bottom: 0;
+  border-radius: 0;
+}
+
+#nav-part2 h4 a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 9;
+}
+
+#nav-part2 h4:hover a{
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container h1{
+    font-size: 7vw;
+    color: blueviolet;
+}
+#new-task {
+  position: relative;
+  background-color: #ffffff;
+  padding: 1.8em 1.25em;
+  border-radius: 0.3em;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+}
+#new-task input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 0.8em 0.5em;
+  color: #111111;
+  font-weight: 500;
+}
+#new-task input:focus {
+  outline: none;
+  border-color: #ff8400;
+}
+#new-task button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #d56e00;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+#tasks {
+  background-color: #ffffff;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 3.8em;
+  width: 100%;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  border-radius: 0.6em;
+}
+.task {
+  background-color: #ffffff;
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.task button {
+  color: #ffffff;
+  padding: 0.8em 0;
+  width: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.delete {
+  background-color: #fb3b3b;
+}
+.edit {
+  background-color: #ff8400;
+  margin-left: auto;
+  margin-right: 3em;
+}
+.completed {
+  text-decoration: line-through;
+}
